@@ -1,0 +1,6 @@
+#!/bin/bash
+clear
+while :; do
+curl -is www.google.com --max-time 5 | grep "HTTP/"
+sleep 2
+done
