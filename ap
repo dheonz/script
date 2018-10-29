@@ -1,6 +1,6 @@
 #!/bin/bash
    clear
- toilet MenuApache and Mysql | lolcat
+ toilet Lampp| lolcat
    echo "Welcome To Menu Apache and Mysql"
    echo "Symple Script Menu:"
    echo "1. Start"
