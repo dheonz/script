@@ -1,59 +1,103 @@
 #!/bin/bash
+
    clear
+
  toilet Lampp| lolcat
+
    echo "Welcome To Menu Apache and Mysql"
+
    echo "Symple Script Menu:"
+
    echo "1. Start"
+
    echo "2. Stop"
+
    echo "3. Restart"
+
    echo "4. Reload"
+
    echo "5. Status"
+
    echo "6. Exit"
+
    echo ""
 
    echo -n "Silahkan Pilih Menu [1-6]: "
+
    read option 
 
    if [ $option -eq 1 ]; then
+
    clear
+
   /etc/init.d/apache2 start
+
   /etc/init.d/mysql start
-   ap
+
+   lamp
 
    elif [ $option -eq 2 ]; then
+
    clear
+
   /etc/init.d/apache2 stop
+
   /etc/init.d/mysql stop
-   ap
+
+   lamp
 
    elif [ $option -eq 3 ]; then
+
    clear
+
   /etc/init.d/apache2 restart
+
   /etc/init.d/mysql restart
-   ap
+
+   lamp
 
    elif [ $option -eq 4 ]; then
+
    clear
+
   /etc/init.d/apache2 reload
+
   /etc/init.d/mysql reload
-   ap
+
+   lamp
 
   elif [ $option -eq 5 ]; then
+
    clear
+
   /etc/init.d/apache2 status
+
   /etc/init.d/mysql status
-   ap
+
+   lamp
 
    elif [ $option -eq 6 ]; then
+
    echo ""
+
    echo "*End*" 
+
    echo "Wassalamualaikum"
+
    clear
+
    exit
+
  
+
    else
+
    echo ""
+
    echo "pilihan salah, silahkan coba lagi..."
+
    sleep 1
+
    ap
+
    fi
